@@ -1,0 +1,118 @@
+# =========================
+# Python
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribuição / empacotamento
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ambientes virtuais
+venv/
+.env/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Pip / Poetry / Pipenv
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+Pipfile.lock
+
+# Testes / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre / Pytype
+.pyre/
+.pytype/
+
+# Ruff / Black / isort caches
+.ruff_cache/
+.black/
+.isort/
+
+# =========================
+# Vim
+# =========================
+
+# Arquivos temporários e swap
+*.swp
+*.swo
+*.swn
+*.tmp
+*.bak
+
+# Diretórios de backup
+.backup/
+.directory
+
+# Sessões do Vim
+Session.vim
+Session.vim.old
+
+# Arquivos de undo persistente
+*.un~
+
+# =========================
+# Sistema / gerais
+# =========================
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDEs comuns (opcional)
+.vscode/
+.idea/
