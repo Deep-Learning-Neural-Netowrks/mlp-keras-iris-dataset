@@ -1,8 +1,10 @@
 from keras import Sequential, Input
 from keras.layers import Dense
+from keras.models import load_model
 from keras import backend as bck
+from src.globals.globals import BASE_DIR
 
-class Model:
+class ModelManager:
     def __init__(self):
         pass
     
@@ -17,4 +19,6 @@ class Model:
         ])
         model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
         return model
-        pass
+    
+    def load_model() -> Sequential:
+        return load_model(BASE_DIR / "models/model.keras")

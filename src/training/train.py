@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 from src.globals.globals import BASE_DIR
-from src.models.model import Model
+from src.models.model import ModelManager
 
 # ===== Accessing Data =====
 X = pd.read_csv(BASE_DIR / "data/raw/inputs.csv", header=None).astype(float)
@@ -15,7 +15,7 @@ y = np.argmax(y, axis=1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
 # ===== Model =====
-model = Model()
+model = ModelManager()
 model = model.build()
 
 # ===== Training =====
